@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A73C60D2B2DB4BF00EE3217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C60C2B2DB4BF00EE3217 /* AppDelegate.swift */; };
+		1A73C60F2B2DB4BF00EE3217 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C60E2B2DB4BF00EE3217 /* SceneDelegate.swift */; };
+		1A73C6112B2DB4BF00EE3217 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C6102B2DB4BF00EE3217 /* MainPageViewController.swift */; };
+		1A73C6162B2DB4C000EE3217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A73C6152B2DB4C000EE3217 /* Assets.xcassets */; };
+		1A73C6192B2DB4C000EE3217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A73C6172B2DB4C000EE3217 /* LaunchScreen.storyboard */; };
+		1A73C6292B2DBA5700EE3217 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C6282B2DBA5700EE3217 /* MainPageView.swift */; };
+		1A73C62B2B2DBF9100EE3217 /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C62A2B2DBF9100EE3217 /* MainPageCell.swift */; };
+		1A73C62E2B2DF7EF00EE3217 /* ModelMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C62D2B2DF7EF00EE3217 /* ModelMainPage.swift */; };
+		1A73C6302B2DFA7800EE3217 /* MainPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C62F2B2DFA7800EE3217 /* MainPageService.swift */; };
+		1A73C6322B2DFA9100EE3217 /* MainPageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73C6312B2DFA9100EE3217 /* MainPageResponse.swift */; };
+		B1336D027D0B636F03F6213B /* Pods_Avito_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC9C7971D44D5E5C7DB5471 /* Pods_Avito_IOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A73C6092B2DB4BF00EE3217 /* Avito-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Avito-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A73C60C2B2DB4BF00EE3217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A73C60E2B2DB4BF00EE3217 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A73C6102B2DB4BF00EE3217 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		1A73C6152B2DB4C000EE3217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A73C6182B2DB4C000EE3217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A73C61A2B2DB4C000EE3217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A73C6282B2DBA5700EE3217 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		1A73C62A2B2DBF9100EE3217 /* MainPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
+		1A73C62D2B2DF7EF00EE3217 /* ModelMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainPage.swift; sourceTree = "<group>"; };
+		1A73C62F2B2DFA7800EE3217 /* MainPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageService.swift; sourceTree = "<group>"; };
+		1A73C6312B2DFA9100EE3217 /* MainPageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageResponse.swift; sourceTree = "<group>"; };
+		3CC9C7971D44D5E5C7DB5471 /* Pods_Avito_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avito_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F9606529ECE609AB8DC6D /* Pods-Avito-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avito-IOS.release.xcconfig"; path = "Target Support Files/Pods-Avito-IOS/Pods-Avito-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		D82BDC512DC695F8227288AD /* Pods-Avito-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avito-IOS.debug.xcconfig"; path = "Target Support Files/Pods-Avito-IOS/Pods-Avito-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A73C6062B2DB4BF00EE3217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1336D027D0B636F03F6213B /* Pods_Avito_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A73C6002B2DB4BF00EE3217 = {
+			isa = PBXGroup;
+			children = (
+				1A73C60B2B2DB4BF00EE3217 /* Avito-IOS */,
+				1A73C60A2B2DB4BF00EE3217 /* Products */,
+				1C588C04C1E8E6FF90A4F687 /* Pods */,
+				A0ACE5F91224339CF9518CA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A73C60A2B2DB4BF00EE3217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6092B2DB4BF00EE3217 /* Avito-IOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A73C60B2B2DB4BF00EE3217 /* Avito-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6222B2DB99800EE3217 /* Modules */,
+				1A73C6212B2DB97F00EE3217 /* Applications */,
+				1A73C6202B2DB8FB00EE3217 /* Resourses */,
+			);
+			path = "Avito-IOS";
+			sourceTree = "<group>";
+		};
+		1A73C6202B2DB8FB00EE3217 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6172B2DB4C000EE3217 /* LaunchScreen.storyboard */,
+				1A73C61A2B2DB4C000EE3217 /* Info.plist */,
+				1A73C6152B2DB4C000EE3217 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		1A73C6212B2DB97F00EE3217 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C60E2B2DB4BF00EE3217 /* SceneDelegate.swift */,
+				1A73C60C2B2DB4BF00EE3217 /* AppDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		1A73C6222B2DB99800EE3217 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6242B2DB9C800EE3217 /* ItemPage */,
+				1A73C6232B2DB9A000EE3217 /* MainPage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1A73C6232B2DB9A000EE3217 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C62C2B2DF7CC00EE3217 /* Api */,
+				1A73C6272B2DBA1000EE3217 /* Model */,
+				1A73C6262B2DBA0A00EE3217 /* View */,
+				1A73C6252B2DB9F900EE3217 /* Controller */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		1A73C6242B2DB9C800EE3217 /* ItemPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemPage;
+			sourceTree = "<group>";
+		};
+		1A73C6252B2DB9F900EE3217 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6102B2DB4BF00EE3217 /* MainPageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A73C6262B2DBA0A00EE3217 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C6282B2DBA5700EE3217 /* MainPageView.swift */,
+				1A73C62A2B2DBF9100EE3217 /* MainPageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A73C6272B2DBA1000EE3217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C62D2B2DF7EF00EE3217 /* ModelMainPage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A73C62C2B2DF7CC00EE3217 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1A73C62F2B2DFA7800EE3217 /* MainPageService.swift */,
+				1A73C6312B2DFA9100EE3217 /* MainPageResponse.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		1C588C04C1E8E6FF90A4F687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D82BDC512DC695F8227288AD /* Pods-Avito-IOS.debug.xcconfig */,
+				656F9606529ECE609AB8DC6D /* Pods-Avito-IOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0ACE5F91224339CF9518CA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9C7971D44D5E5C7DB5471 /* Pods_Avito_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A73C6082B2DB4BF00EE3217 /* Avito-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A73C61D2B2DB4C000EE3217 /* Build configuration list for PBXNativeTarget "Avito-IOS" */;
+			buildPhases = (
+				4AD7DA52CD9F4A619EE9F361 /* [CP] Check Pods Manifest.lock */,
+				1A73C6052B2DB4BF00EE3217 /* Sources */,
+				1A73C6062B2DB4BF00EE3217 /* Frameworks */,
+				1A73C6072B2DB4BF00EE3217 /* Resources */,
+				0CBA7B9186661C5A0E7B9626 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Avito-IOS";
+			productName = "Avito-IOS";
+			productReference = 1A73C6092B2DB4BF00EE3217 /* Avito-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A73C6012B2DB4BF00EE3217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1A73C6082B2DB4BF00EE3217 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 1A73C6042B2DB4BF00EE3217 /* Build configuration list for PBXProject "Avito-IOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A73C6002B2DB4BF00EE3217;
+			productRefGroup = 1A73C60A2B2DB4BF00EE3217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A73C6082B2DB4BF00EE3217 /* Avito-IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A73C6072B2DB4BF00EE3217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A73C6192B2DB4C000EE3217 /* LaunchScreen.storyboard in Resources */,
+				1A73C6162B2DB4C000EE3217 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CBA7B9186661C5A0E7B9626 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Avito-IOS/Pods-Avito-IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Avito-IOS/Pods-Avito-IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Avito-IOS/Pods-Avito-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD7DA52CD9F4A619EE9F361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Avito-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A73C6052B2DB4BF00EE3217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A73C6112B2DB4BF00EE3217 /* MainPageViewController.swift in Sources */,
+				1A73C62B2B2DBF9100EE3217 /* MainPageCell.swift in Sources */,
+				1A73C60D2B2DB4BF00EE3217 /* AppDelegate.swift in Sources */,
+				1A73C62E2B2DF7EF00EE3217 /* ModelMainPage.swift in Sources */,
+				1A73C6292B2DBA5700EE3217 /* MainPageView.swift in Sources */,
+				1A73C6322B2DFA9100EE3217 /* MainPageResponse.swift in Sources */,
+				1A73C6302B2DFA7800EE3217 /* MainPageService.swift in Sources */,
+				1A73C60F2B2DB4BF00EE3217 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A73C6172B2DB4C000EE3217 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A73C6182B2DB4C000EE3217 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A73C61B2B2DB4C000EE3217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A73C61C2B2DB4C000EE3217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A73C61E2B2DB4C000EE3217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82BDC512DC695F8227288AD /* Pods-Avito-IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SUW9D9DP2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Avito-IOS/Resourses/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EgorIvanov.Avito-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A73C61F2B2DB4C000EE3217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656F9606529ECE609AB8DC6D /* Pods-Avito-IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SUW9D9DP2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Avito-IOS/Resourses/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EgorIvanov.Avito-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A73C6042B2DB4BF00EE3217 /* Build configuration list for PBXProject "Avito-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A73C61B2B2DB4C000EE3217 /* Debug */,
+				1A73C61C2B2DB4C000EE3217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A73C61D2B2DB4C000EE3217 /* Build configuration list for PBXNativeTarget "Avito-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A73C61E2B2DB4C000EE3217 /* Debug */,
+				1A73C61F2B2DB4C000EE3217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A73C6012B2DB4BF00EE3217 /* Project object */;
+}
