@@ -18,7 +18,6 @@ struct ModelMainPage: Decodable{
     var createdDate: String
     var imageURL: String
     
-    
     enum CodingKeys: String,CodingKey {
         case id
         case title

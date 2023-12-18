@@ -10,7 +10,6 @@ import Kingfisher
 
 final class MainPageCell: UICollectionViewCell {
     // MARK: - private properties
-    
     private enum Const {
         static let topConst: CGFloat = 5
         static let leadingConst: CGFloat = 10
@@ -26,25 +25,21 @@ final class MainPageCell: UICollectionViewCell {
     private let titleMainPage: UILabel = {
         let title = UILabel()
         title.font = UIFont.systemFont(ofSize: Const.titleSize)
-        title.text = "Iphone 12"
         return title
     }()
     private let priceMainPage: UILabel = {
         let price = UILabel()
         price.font = UIFont(name: "HelveticaNeue-Bold", size: Const.priceSize)
-        price.text = "79.800 Р"
         return price
     }()
     private let locationMainPage: UILabel = {
         let location = UILabel()
         location.font = UIFont.systemFont(ofSize: Const.localAndDateSize)
-        location.text = "Ростов-на-Дону"
         return location
     }()
     private let createdDateMainPage: UILabel = {
         let date = UILabel()
         date.font = UIFont.systemFont(ofSize: Const.localAndDateSize)
-        date.text = "11.03.2231"
         return date
     }()
     // MARK: - init
@@ -61,7 +56,6 @@ final class MainPageCell: UICollectionViewCell {
     // MARK: - imageSetup
     
     private func imageSetup() {
-        imageMainPage.image = UIImage(named: "Image")
         imageMainPage.contentMode = .scaleToFill
 
     }

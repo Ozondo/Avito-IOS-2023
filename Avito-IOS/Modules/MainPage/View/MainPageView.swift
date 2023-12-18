@@ -9,8 +9,7 @@ import UIKit
 
 final class MainPageView: UIView {
     
-    private var items: [ModelMainPage] = []
-    
+    var onCellTapped: ((Int) -> ())?
     
     // MARK: - private properties
     private enum Const {
@@ -27,7 +26,8 @@ final class MainPageView: UIView {
         return collection
     }()
     
-
+    private var items: [ModelMainPage] = []
+    
     // MARK: - init
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -91,11 +91,15 @@ extension MainPageView: UICollectionViewDataSource, UICollectionViewDelegateFlow
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (bounds.width/2)-Const.spacingBetweenCells, height: Const.heightCell)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionItems.deselectItem(at: indexPath, animated: true)
+        onCellTapped?(indexPath.item)
+    }
 }
 
 // MARK: - items
 extension MainPageView {
-    func setItens(_ itemsFromNetwork: [ModelMainPage]) {
+    func setItems(_ itemsFromNetwork: [ModelMainPage]) {
         self.items = itemsFromNetwork
         collectionItems.reloadData()
     }

@@ -19,6 +19,7 @@ final class MainPageViewController: UIViewController {
         super.viewDidLoad()
         network()
         setupTitle()
+        setUpView()
     }
     // MARK: - loadView
     override func loadView() {
@@ -38,6 +39,16 @@ final class MainPageViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    private func setUpView() {
+        mainPageView.onCellTapped = { [weak self] index in
+            guard let self,index < self.items.count else {return}
+            let item = self.items[index].id
+            let viewController = ItemPageViewController(service: ItemPageServiceImpl(), id: item)
+            
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
     // MARK: - Network
     private func network() {
         DispatchQueue.main.async {
@@ -45,7 +56,7 @@ final class MainPageViewController: UIViewController {
                 switch result {
                 case .success(let success):
                     self?.items = success.advertisements
-                    self?.mainPageView.setItens(self?.items ?? [])
+                    self?.mainPageView.setItems(self?.items ?? [])
                 case .failure(let error):
                     print("error")
                 }
